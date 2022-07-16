@@ -10,6 +10,10 @@ To build this text editor, you will start with an existing application and imple
 
 The following application is a single page, Text Editor program which is accessable for use both Off and Online.
 
-Github Repository:
+Github Repository: 
+https://github.com/coreylevine2000/hw-19-PWA-Text-Editor/tree/main/Develop
+
 Images:
+![plot](ass)
+
 Heroku Link:
