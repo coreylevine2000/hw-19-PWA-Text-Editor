@@ -3,9 +3,6 @@ const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
 
-// TODO: Add and configure workbox plugins for a service worker and manifest file. check
-// TODO: Add CSS loaders and babel to webpack. check
-
 module.exports = () => {
   return {
     mode: 'development',
@@ -35,9 +32,9 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Contact Cards',
-        short_name: 'Contact',
-        description: 'Never forget your contacts!',
+        name: 'Just Another Text Editor',
+        short_name: 'J.A.T.E',
+        description: 'Create A Document!',
         background_color: '#225ca3',
         theme_color: '#225ca3',
         start_url: './',
@@ -66,7 +63,8 @@ module.exports = () => {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
-              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime',
+              ],
             },
           },
         },
